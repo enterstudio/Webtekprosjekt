@@ -113,6 +113,7 @@ body {
 	margin-right: auto;
 	margin-left: auto;
 	margin-top: 50px;
+      vertical-align: top;
 }
 .col-1 a{
 	text-decoration: none;
