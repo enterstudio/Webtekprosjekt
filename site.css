@@ -41,6 +41,7 @@ Mork rod: #4B0E0E
 }
 
 #primaryNavWrap ul li {
+      width: 110px;
       position: relative;
       float: left;
       margin:0;
