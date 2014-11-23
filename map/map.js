@@ -1,6 +1,9 @@
 // This example displays a marker at the center of Australia.
 // When the user clicks the marker, an info window opens.
 
+//GPS-coordinates tool: http://www.gpsvisualizer.com/geocode
+//Maps documentation: https://developers.google.com/maps/documentation/javascript/infowindows#add
+
 function initialize() {
   var myLatlng = new google.maps.LatLng(63.417511, 10.4188995);
   var mapOptions = {
