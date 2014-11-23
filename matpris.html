@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<link href="http://fonts.googleapis.com/css?family=Ubuntu:400,700,300" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="site.css">
+    <style>
+        button {
+            border: none;
+            width: 85px;
+        }
+        table { margin-left:30px;}
+        td strong { margin-right: 20px;}
+    </style>
+</head>
+<body>
+	<div id="nav">
+		<div id="primaryNavWrap">
+			<ul>
+				<li class="currentMenuItem">
+					<a href="#">Hjem</a>
+				</li>
+				<li><a href="#">Uteliv</a>
+					<ul>
+						<li><a href="#">Sub Menu 1</a></li>
+						<li><a href="#">Sub Menu 2</a></li>
+						<li><a href="#">Sub Menu 3</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Studentliv</a>
+					<ul>
+						<li><a href="#">Sub Menu 1</a></li>
+						<li><a href="#">Sub Menu 2</a></li>
+					</ul>
+				<li><a href="#">Fritid</a></li>
+				<li><a href="#">Maps and places</a></li>
+				<li><a href="#">Fritid</a></li>
+				<li><a href="#">Tips and tricks</a></li>
+			</ul>
+			<div class="welcome"></div>
+		</div>
+	</div>
+
+	<div class="pageContent">
+		<div class="row">
+			<div class="col-text">
+				<h1>Studenguidens lille pristest</h1>
+                <p>Det er mye studielånet skal dekke, og dagligvarer er en av de postene i budsjettet hvor man har mulighet til å spare litt penger. Handler man lurt blir det fort penger til et par ekstra øl ute på byen.</p>
+                <p>Under er en interaktiv tabell med en del forskjellige dagligvarer man gjerne bruker litt penger på i løpet av et semester.</p>
+                <p>Ipsum lorem yo!</p>
+			</div>
+			<div class="col-img">
+				<img src="dagligvarer.jpg">
+			</div>
+		</div>
+        <div class="row">
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th><button id="sort-button-1">Kaffe</button></th>
+                        <th><button id="sort-button-2">Kyllingfilet</button></th>
+                        <th><button id="sort-button-3">Omo Color</button></th>
+                        <th><button id="sort-button-4">Bananer</button></th>
+                        <th><button id="sort-button-5">Egg</button></th>
+                        <th><button id="sort-button-6">Tacokit</button></th>
+                        <th><button id="sort-button-7">Øl, Dahls</button></th>
+                        <th><button id="sort-button-8">Poteter</button></th>
+                    </tr>
+                </thead>
+                <tbody id="tablebody">
+                    <tr>
+                        <td><strong>Spar</strong></td><td>51.8</td><td>110.15</td><td>49.9</td><td>19.9</td><td>39.9</td><td>33.9</td><td>29.9</td><td>15.9</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Rema</strong></td><td>37.6</td><td>96.5</td><td>52.5</td><td>15.5</td><td>37.8</td><td>26.9</td><td>29.4</td><td>16.9</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Rimi</strong></td><td>39.8</td><td>108.9</td><td>52.5</td><td>18.9</td><td>36.9</td><td>31.5</td><td>29.5</td><td>19.9</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Kiwi</strong></td><td>47.8</td><td>119.65</td><td>52.6</td><td>18.8</td><td>36.9</td><td>26.9</td><td>29.4</td><td>19.9</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Prix</strong></td><td>45</td><td>110.15</td><td>54.6</td><td>15.9</td><td>37.8</td><td>19</td><td>29.9</td><td>18.9</td>
+                    </tr>
+                </tbody>
+            </table>
+ 
+            <script src="matprat.js">
+            </script>
+        </div>
+	</div>
+	<div id="footer">
+		<div>
+			<p>Created by three guys</p>
+			<p>Contact details: email@domain.com</p>
+		</div>
+	</div>
+
+	<script src="welcome.js"></script>
+</body>
+
+
+
+</html>
