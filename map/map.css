@@ -1,0 +1,11 @@
+
+
+#map-canvas {
+      width: 80%;
+      height: 70%;
+      position: absolute;
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+      right: 0;
+}

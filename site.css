@@ -10,6 +10,7 @@ Mork rod: #4B0E0E
       height: 60px;
       width: 100%;
       background-color: #4B0E0E;
+      z-index: 100;
 }
 
 #primaryNavWrap {
@@ -84,6 +85,7 @@ Mork rod: #4B0E0E
       /*display: inline-block;*/
 
       min-height: 88vh;
+
 }
 
 .welcome {
@@ -101,6 +103,7 @@ body {
 	color: #4B0E0E;
 
       height: 100%;
+
 }
 .section{
 	width:100%;
@@ -196,4 +199,20 @@ body {
 #footer div p{
       margin: 0;
 
+}
+
+#map-canvas-container {
+      margin-left: auto;
+      margin-right: auto;
+}
+
+#map-canvas {
+      width: 80%;
+      height: 100%;
+      position: absolute;
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+      right: 0;
+      
 }
