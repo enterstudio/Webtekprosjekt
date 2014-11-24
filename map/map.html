@@ -29,14 +29,26 @@
 						<li><a href="#">Sub Menu 2</a></li>
 					</ul>
 				<li><a href="#">Fritid</a></li>
+				<li><a href="#">Kart</a></li>
 			</ul>
 			<div class="welcome"></div>
 		</div>
 	</div>
 
 	<div class="pageContent">
-		Kartet har info fuck yes
-		<div id="map-canvas"></div>
+		
+		<div class="row">
+			<div class="buttons">
+				Vis i kart:
+				<a href="#" id="gloes" onclick="relocateToGloes()">Gløshaugen</a>
+				<a href="#" id="dragvoll" onclick="relocateToDragvoll()">Dragvoll</a>
+				<a href="#" id="samfundet" onclick="relocateToSamfundet()">Samfundet</a>
+			</div>
+		</div>
+		<div class ="row">
+			<div id="map-canvas"></div>
+		</div>
+		
 	</div>
 
 	<div id="footer">

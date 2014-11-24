@@ -4,6 +4,17 @@
 //GPS-coordinates tool: http://www.gpsvisualizer.com/geocode
 //Maps documentation: https://developers.google.com/maps/documentation/javascript/infowindows#add
 
+var map;
+var infowindow;
+
+var contentStringGloeshaugen;
+var contentStringDragvoll;
+var contentStringSamfundet;
+
+var markerGloeshaugen;
+var markerDragvoll;
+var markerSamfundet;
+
 function initialize() {
   var myLatlng = new google.maps.LatLng(63.417511, 10.4188995);
   var mapOptions = {
@@ -11,12 +22,12 @@ function initialize() {
     center: myLatlng
   };
 
-  var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+  map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
 
-  var infowindow = new google.maps.InfoWindow();
+  infowindow = new google.maps.InfoWindow();
 
   //NTNU Gløshaugen
-  var contentStringGloeshaugen = 
+  contentStringGloeshaugen = 
 	'<div id="content">'+
 		'<div id="siteNotice">'+'</div>'+
 
@@ -29,7 +40,7 @@ function initialize() {
 		'</div>'+
 	'</div>';
 
-  var markerGloeshaugen = new google.maps.Marker({
+  markerGloeshaugen = new google.maps.Marker({
       position: new google.maps.LatLng(63.4164986, 10.4045159),
       map: map,
       title: 'NTNU Gløshaugen'
@@ -42,7 +53,7 @@ function initialize() {
 
   
   //NTNU Dragvoll
-  var contentStringDragvoll = 
+  contentStringDragvoll = 
 	'<div id="content">'+
 		'<div id="siteNotice">'+'</div>'+
 
@@ -55,7 +66,7 @@ function initialize() {
 		'</div>'+
 	'</div>';
 
-  var markerDragvoll = new google.maps.Marker({
+  markerDragvoll = new google.maps.Marker({
       position: new google.maps.LatLng(63.4089983, 10.4708427),
       map: map,
       title: 'NTNU Dragvoll'
@@ -66,7 +77,7 @@ function initialize() {
   });
 
   //Samfundet
-  var contentStringSamfundet = 
+  contentStringSamfundet = 
 	'<div id="content">'+
 		'<div id="siteNotice">'+'</div>'+
 
@@ -74,23 +85,55 @@ function initialize() {
 		'<div id="bodyContent">'+
 			'<p>Studentersamfundet i Trondhjem, ofte forkortet til Samfundet, er en organisasjon for studenter i Trondheim. Det ble stiftet 1. oktober 1910, og er det nest eldste studentsamfunnet i Norge. Organisasjonen holder til i sitt eget bygg i Elgeseter gate 1 på Vollan i Trondheim. Samfundets mest kjente virksomhetsområde er kanskje utestedsdriften av sitt eget hus, men det arrangerer også debatter, kino og egenproduserte teaterstykker, i tillegg til at det utgir avis og har sin egen TV- og radiokanal. Totalt ca. 1300 studenter jobber frivillig ved Samfundet, organisert i over 20 forskjellige ansvarsgrupper kalt gjenger. Studentersamfundets nåværende leder er Per Fridtjof Larssen.</p>'+
 
-			'<p>Kilde: Samfundet, <a href="Studentersamfundet i Trondhjem" target="blank">'+
-			'Studentersamfundet i Trondhjem</a></p>'+
+			'<p>Kilde: Samfundet, <a href="http://no.wikipedia.org/wiki/Studentersamfundet_i_Trondhjem" target="blank">'+
+			'http://no.wikipedia.org/wiki/Studentersamfundet_i_Trondhjem</a></p>'+
 		'</div>'+
 	'</div>';
 
-  var markerGloeshaugen = new google.maps.Marker({
-      position: new google.maps.LatLng(63.42245,10.39557),
+  markerSamfundet = new google.maps.Marker({
+      position: new google.maps.LatLng(63.42237,10.39625),
       map: map,
-      title: 'NTNU Gløshaugen'
+      title: 'Samfundet'
   });
 
-  google.maps.event.addListener(markerGloeshaugen, 'click', function() {
-  	infowindow.setContent(contentStringSamfundet);
+  google.maps.event.addListener(markerSamfundet, 'click', function() {
+    infowindow.setContent(contentStringSamfundet);
     infowindow.open(map,this);
   });
-
 
 }
 
 google.maps.event.addDomListener(window, 'load', initialize);
+
+function relocateToGloes() {
+  var newCoord = new google.maps.LatLng(63.4164986, 10.4045159);
+  var mapOptions = {
+    zoom: 13,
+    center: newCoord
+  };
+  map.setCenter(newCoord);
+  infowindow.setContent(contentStringGloeshaugen);
+  infowindow.open(map,markerGloeshaugen);
+}
+
+function relocateToDragvoll() {
+  var newCoord = new google.maps.LatLng(63.4089983, 10.4708427);
+  var mapOptions = {
+    zoom: 13,
+    center: newCoord
+  };
+  map.setCenter(newCoord);
+  infowindow.setContent(contentStringDragvoll);
+  infowindow.open(map,markerDragvoll);
+}
+
+function relocateToSamfundet() {
+  var newCoord = new google.maps.LatLng(63.42237,10.39625);
+  var mapOptions = {
+    zoom: 13,
+    center: newCoord
+  };
+  map.setCenter(newCoord);
+  infowindow.setContent(contentStringSamfundet);
+  infowindow.open(map,markerSamfundet);
+}

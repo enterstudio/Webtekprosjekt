@@ -10,7 +10,8 @@ Mork rod: #4B0E0E
       height: 60px;
       width: 100%;
       background-color: #4B0E0E;
-      z-index: 100;
+      z-index: 1000000;
+      position: relative;
 }
 
 #primaryNavWrap {
@@ -25,6 +26,7 @@ Mork rod: #4B0E0E
       float: left;
       padding: 0px;
       margin-top:0px;
+      text-align: center;
 }
 
 #primaryNavWrap ul a {
@@ -73,6 +75,7 @@ Mork rod: #4B0E0E
 }
 
 #primaryNavWrap ul ul a {
+      float: left;
       line-height: 120%;
       padding: 10px 15px;
 }
@@ -199,20 +202,4 @@ body {
 #footer div p{
       margin: 0;
 
-}
-
-#map-canvas-container {
-      margin-left: auto;
-      margin-right: auto;
-}
-
-#map-canvas {
-      width: 80%;
-      height: 100%;
-      position: absolute;
-      margin-left: auto;
-      margin-right: auto;
-      left: 0;
-      right: 0;
-      
 }

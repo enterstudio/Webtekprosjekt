@@ -8,4 +8,26 @@
       margin-right: auto;
       left: 0;
       right: 0;
+      bottom:0px;
+      top: 120px;
+      /*z-index: -100;*/
+}
+
+.buttons {
+	margin-top:32px;
+	text-align: center;
+
+}
+
+.buttons a {
+	color: #FFFFFF;
+	background-color: #4B0E0E;
+	padding: 10px;
+	margin-right: 20px;
+	text-decoration: none;
+
+}
+
+.buttons a:hover {
+	background-color: #990000;
 }
