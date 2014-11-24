@@ -101,17 +101,17 @@ body {
 	position: relative;
 }
 .col{
-     margin-top:50px;
+      margin-top:50px;
 }
 .col-1{
-	text-align: center;
-	width: 32.9%;
-    max-width:390px;
-    display: inline-block;
-	margin-right: auto;
-	margin-left: auto;
-	margin-top: 50px;
-    vertical-align:top;
+      text-align: center;
+      width: 32.9%;
+      max-width:390px;
+      display: inline-block;
+      margin-right: auto;
+      margin-left: auto;
+      margin-top: 50px;
+      vertical-align:top;
 }
 .col-1 a{
 	text-decoration: none;
@@ -129,7 +129,7 @@ body {
 	margin-top: 25px;
 }
 .col-text p{
-		  margin-left:30px;
+      margin-left:30px;
 }
 .col-img{
 	display: inline-block;     
