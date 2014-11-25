@@ -10,6 +10,8 @@ Mork rod: #4B0E0E
       height: 60px;
       width: 100%;
       background-color: #4B0E0E;
+      z-index: 1000000;
+      position: relative;
 }
 
 #primaryNavWrap {
@@ -24,13 +26,14 @@ Mork rod: #4B0E0E
       float: left;
       padding: 0px;
       margin-top:0px;
+      margin-bottom:0px;
 }
 
 #primaryNavWrap ul a {
       color: white;
       display: block;
       text-decoration: none;
-      font-weight: 350;
+      font-weight: 400;
       font-size: 18px;
       line-height: 32px;
       padding: 14px;
@@ -41,7 +44,6 @@ Mork rod: #4B0E0E
 }
 
 #primaryNavWrap ul li {
-      width: 110px;
       position: relative;
       float: left;
       margin:0;
@@ -81,9 +83,9 @@ Mork rod: #4B0E0E
 }
 
 .pageContent {
-      /*display: inline-block;*/
-
+      display: inline-block;
       min-height: 88vh;
+      width: 100%;
 }
 
 .welcome {
@@ -99,17 +101,23 @@ body {
 	background: white;
 	font-family: 'Ubuntu', sans-serif;
 	color: #4B0E0E;
-
       height: 100%;
 }
-.section{
+
+.section {
 	width:100%;
 	border: 1px solid black;
 	position: relative;
 }
-.col-1{
+
+.col {
+     margin-top:50px;
+}
+
+.col-1 {
 	text-align: center;
 	width: 32.9%;
+      max-width: 390px;
 	display: inline-block;
 	margin-right: auto;
 	margin-left: auto;
@@ -145,6 +153,7 @@ body {
 }
 .row{
 	width: 80%;
+      max-width: 1170px;
 	margin-right: auto;
 	margin-left: auto;
 }
