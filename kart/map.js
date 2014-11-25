@@ -10,10 +10,14 @@ var infowindow;
 var contentStringGloeshaugen;
 var contentStringDragvoll;
 var contentStringSamfundet;
+var contentStringNidarosdomen;
+var contentStringIKEA;
 
 var markerGloeshaugen;
 var markerDragvoll;
 var markerSamfundet;
+var markerNidarosdomen;
+var markerIKEA;
 
 function initialize() {
   var myLatlng = new google.maps.LatLng(63.417511, 10.4188995);
@@ -101,6 +105,60 @@ function initialize() {
     infowindow.open(map,this);
   });
 
+  //Nidarosdomen
+  contentStringNidarosdomen = 
+  '<div id="content">'+
+    '<div id="siteNotice">'+'</div>'+
+
+    '<h1 id="firstHeading" class="firstHeading">Nidarosdomen</h1>'+
+    '<div id="bodyContent">'+
+      '<p>Nidarosdomen i Trondheim, egentlig Nidaros domkirke, er Norges mest sentrale kirke, fordi den er Olav den helliges gravkirke. Den er i dag en luthersk domkirke og menighetskirke og betraktes både som Norges nasjonalhelligdom og som kroningskirke (selv om det ikke lenger foretas kongekroninger i Norge). I den norske Grunnloven av 1814 ble det slått fast at Kongeriket Norges regent skal krones i Trondheim. Nidarosdomen ble sist benyttet som kroningskirke i 1906, da Haakon VII ble kronet. Etter at Stortinget i 1908 avskaffet kroningsseremonien, har kirken vært brukt til signing av regenten. De norske kronregaliene har vært oppbevart i kirken og er nå utstilt i Erkebispegården like ved.</p>'+
+
+      '<p>Kilde: Nidarosdomen, <a href="http://no.wikipedia.org/wiki/Nidarosdomen" target="blank">'+
+      'http://no.wikipedia.org/wiki/Nidarosdomen</a></p>'+
+    '</div>'+
+  '</div>';
+
+  markerNidarosdomen = new google.maps.Marker({
+      position: new google.maps.LatLng(63.4269097, 10.3969374),
+      map: map,
+      title: 'Nidarosdomen'
+  });
+
+  google.maps.event.addListener(markerNidarosdomen, 'click', function() {
+    infowindow.setContent(contentStringNidarosdomen);
+    infowindow.open(map,this);
+  });
+
+  //IKEA
+  //Nidarosdomen
+  contentStringIKEA = 
+  '<div id="content">'+
+    '<div id="siteNotice">'+'</div>'+
+
+    '<h1 id="firstHeading" class="firstHeading">IKEA</h1>'+
+    '<div id="bodyContent">'+
+      '<p>Hos IKEA finner man alt man trenger til hybelen.</p>'+
+
+      '<p>Åpningstider:<br />Mandag til fredag: 10–22<br />Lørdag: 10–20</p>' +
+
+      '<p>Kilde: IKEA Leangen, <a href="http://www.ikea.com/no/no/store/leangen/storeInfo" target="blank">'+
+      'http://www.ikea.com/no/no/store/leangen/storeInfo</a></p>'+
+    '</div>'+
+  '</div>';
+
+  markerIKEA = new google.maps.Marker({
+      position: new google.maps.LatLng(63.42854,10.47299),
+      map: map,
+      title: 'IKEA Leangen'
+  });
+
+  google.maps.event.addListener(markerIKEA, 'click', function() {
+    infowindow.setContent(contentStringIKEA);
+    infowindow.open(map,this);
+  });
+
+
 }
 
 google.maps.event.addDomListener(window, 'load', initialize);
@@ -136,4 +194,26 @@ function relocateToSamfundet() {
   map.setCenter(newCoord);
   infowindow.setContent(contentStringSamfundet);
   infowindow.open(map,markerSamfundet);
+}
+
+function relocateToNidarosdomen() {
+  var newCoord = new google.maps.LatLng(63.4269097, 10.3969374);
+  var mapOptions = {
+    zoom: 13,
+    center: newCoord
+  };
+  map.setCenter(newCoord);
+  infowindow.setContent(contentStringNidarosdomen);
+  infowindow.open(map,markerNidarosdomen);
+}
+
+function relocateToIKEA() {
+  var newCoord = new google.maps.LatLng(63.42854,10.47299);
+  var mapOptions = {
+    zoom: 13,
+    center: newCoord
+  };
+  map.setCenter(newCoord);
+  infowindow.setContent(contentStringIKEA);
+  infowindow.open(map,markerIKEA);
 }
