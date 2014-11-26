@@ -206,3 +206,9 @@ body {
       margin: 0;
 
 }
+
+img {
+      max-width: 40%;
+      height: auto;
+      float: right;
+}
