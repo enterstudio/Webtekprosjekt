@@ -1,0 +1,12 @@
+#utgifter li {
+	list-style-type: none;
+}
+
+th button {
+    border: none;
+    width: 85px;
+        }
+
+td strong { 
+	margin-right: 20px;
+}
