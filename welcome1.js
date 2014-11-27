@@ -10,6 +10,7 @@ var godKveld = document.createTextNode("God kveld");
 var welcome = document.getElementsByClassName("welcome")[0];
 
 window.onload = function() {
+	console.log("running");
 	if (hours >= 0 && hours < 6) {
 		welcome.appendChild(godNatt);
 	} if (hours >= 6 && hours < 12) {
