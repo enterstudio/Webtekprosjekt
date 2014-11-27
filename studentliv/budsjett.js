@@ -1,5 +1,13 @@
 var sum_utgifter = 0;
 
+function sum() {
+    var sum = 0;
+    var budsjett = document.getElementById("budsjett").value;
+    sum += parseInt(budsjett);
+    sum -= sum_utgifter;
+    document.getElementById("sum").innerHTML = "<p>" + sum + "</p>";
+}
+
 function ny_utgift() {
 	var utgift_navn = document.getElementById("utgift_navn").value;
 	var utgift = document.getElementById("utgift").value;
@@ -11,6 +19,7 @@ function ny_utgift() {
         sum_utgifter += parseInt(utgift);
         document.getElementById("utgift_navn").value = "";
         document.getElementById("utgift").value = "";
+		sum();
     }
 }
 
@@ -25,13 +34,8 @@ function reset() {
     while (utgifter.firstChild) {
         utgifter.removeChild(utgifter.firstChild);
     }
+	sum();
 }
 
-function sum() {
-    var sum = 0;
-    var budsjett = document.getElementById("budsjett").value;
-    sum += parseInt(budsjett);
-    sum -= sum_utgifter;
-    document.getElementById("sum").innerHTML = "<p>" + sum + "</p>";
-}
+
     
