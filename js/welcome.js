@@ -8,8 +8,8 @@ var godKveld = document.createTextNode("God kveld");
 
 
 var welcome = document.getElementsByClassName("welcome")[0];
-
-window.onload = function() {
+addMessage();
+function addMessage() {
 	console.log("running");
 	if (hours >= 0 && hours < 6) {
 		welcome.appendChild(godNatt);
