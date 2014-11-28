@@ -87,7 +87,7 @@ else
 }
 
 function startAnimation(){
-	pixelDiff = 110
+	pixelDiff = 107
 	if(slideNumber==slideLength){
 		slideNumber = 0	
 	}
@@ -116,9 +116,9 @@ function nextAnimationFrame(){
 	// Fordeler pa 15 frames
 	currentSlide.x -= pixelDiff  
 	nextSlide.x -= pixelDiff
-	if(pixelDiff>5){
+	//if(pixelDiff>5){
 		pixelDiff = pixelDiff/1.1
-	}
+	//}
 	// Draw box
 	ctx.fillStyle="rgba(75, 14, 14, 0.7)"
 	ctx.fillRect(currentSlide.x,440,500,100)
