@@ -87,6 +87,7 @@ else
 }
 
 function startAnimation(){
+	pixelDiff = 110
 	if(slideNumber==slideLength){
 		slideNumber = 0	
 	}
@@ -107,16 +108,17 @@ function startAnimation(){
 
 	slideNumber+=1
 }
-
+var pixelDiff = 0
 function nextAnimationFrame(){
-	console.log("frame")
-	
 	// Draw picture 
 	ctx.drawImage(currentSlide.img,currentSlide.x,currentSlide.y,1170,580);
 	ctx.drawImage(nextSlide.img,nextSlide.x,nextSlide.y,1170,580);
 	// Fordeler pa 15 frames
-	currentSlide.x -= 39
-	nextSlide.x -=39
+	currentSlide.x -= pixelDiff  
+	nextSlide.x -= pixelDiff
+	if(pixelDiff>5){
+		pixelDiff = pixelDiff/1.1
+	}
 	// Draw box
 	ctx.fillStyle="rgba(75, 14, 14, 0.7)"
 	ctx.fillRect(currentSlide.x,440,500,100)
@@ -127,10 +129,16 @@ function nextAnimationFrame(){
 	ctx.fillText(currentSlide.string,currentSlide.x+20+100,490)
 	ctx.fillText(nextSlide.string,nextSlide.x+20+100,490)
 	if(nextSlide.x>=0){
-		console.log(nextSlide.x)
+		
 		requestAnimationFrame(nextAnimationFrame)
 	}
 	else{
+		ctx.drawImage(nextSlide.img,0,0,1170,580);
+		ctx.fillStyle="rgba(75, 14, 14, 0.7)"
+		ctx.fillRect(nextSlide.x,440,500,100)
+		ctx.font="20px Ubuntu";
+		ctx.fillStyle="white";
+		ctx.fillText(nextSlide.string,nextSlide.x+20+100,490)
 	   	document.getElementById("slideLink").href = slideLinks[slideNumber]; 	
 	}
 }
