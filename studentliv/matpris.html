@@ -6,6 +6,33 @@
 	<link rel="stylesheet" href="../site.css">
 	<link rel="stylesheet" href="studentliv.css">
 	<title>Matpris</title>
+		<style>
+	table{
+		  border-collapse: collapse;
+	}
+	table,td,th{
+		  border:1px solid #4B0E0E;
+		  padding:10px;
+	}
+	th{
+	   background-color:#4B0E0E;
+	   color:white;
+	   border:0px;
+	}
+	td{
+	   min-width:100px;  
+	}
+	td ~ td{
+	   text-align:right;
+	}
+	tr th:hover{
+
+		cursor: pointer;
+		background-color: #6E3030;
+	}
+	
+	
+	</style> 
 </head>
 <body>
 	<div id="nav">
@@ -61,14 +88,14 @@
                 <thead>
                     <tr>
                         <th></th>
-                        <th><button id="sort-button-1">Kaffe</button></th>
-                        <th><button id="sort-button-2">Kyllingfilet</button></th>
-                        <th><button id="sort-button-3">Omo Color</button></th>
-                        <th><button id="sort-button-4">Bananer</button></th>
-                        <th><button id="sort-button-5">Egg</button></th>
-                        <th><button id="sort-button-6">Tacokit</button></th>
-                        <th><button id="sort-button-7">Øl, Dahls</button></th>
-                        <th><button id="sort-button-8">Poteter</button></th>
+                        <th id="sort-button-1"><a >Kaffe</a></th>
+                        <th id="sort-button-2"><a >Kyllingfilet</a></th>
+                        <th id="sort-button-3"><a >Omo Color</a></th>
+                        <th id="sort-button-4"><a >Bananer</a></th>
+                        <th id="sort-button-5"><a >Egg</a></th>
+                        <th id="sort-button-6"><a >Tacokit</a></th>
+                        <th id="sort-button-7"><a >Øl, Dahls</a></th>
+                        <th id="sort-button-8"><a >Poteter</a></th>
                     </tr>
                 </thead>
                 <tbody id="tablebody">
