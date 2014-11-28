@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<site>
+	<categories>
+		<category>
+			<name>Uteliv</name>
+			<subpages>
+				<subpage>
+					<name>Samfundet</name>
+				</subpage>
+				<subpage>
+					<name>Sentrum</name>
+				</subpage>
+				<subpage>
+					<name>Solsiden</name>
+				</subpage>
+			</subpages>	
+		</category>
+		<category>
+			<name>Studentliv</name>
+			<subpages>
+				<subpage>
+					<name>Budsjett</name>
+				</subpage>
+				<subpage>
+					<name>Matpriser</name>
+				</subpage>
+				<subpage>
+					<name>Studieteknikk</name>
+				</subpage>
+				<subpage>
+					<name>Kok</name>
+				</subpage>
+			</subpages>
+		</category>
+		<category>
+			<name>Fritid</name>
+			<subpages>
+				<subpage>
+					<name>Kultur</name>
+				</subpage>
+				<subpage>
+					<name>Bymarka</name>
+				</subpage>
+				<subpage>
+					<name>Trening</name>
+				</subpage>
+			</subpages>
+		</category>
+		<category>
+			<name>Kart</name>
+		</category>
+		</categories>
+</site>
+
