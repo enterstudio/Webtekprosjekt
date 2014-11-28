@@ -156,6 +156,10 @@ body {
       max-width: 1170px;
 	margin-right: auto;
 	margin-left: auto;
+      margin-top: 20px;
+
+
+      position: relative;
 }
 
 .row>p {
