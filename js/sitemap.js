@@ -24,6 +24,5 @@ for(var i=0; i<categories.childNodes.length;i++){
 		}
 		sitemap += "</ul>"
 	}
-	console.log(sitemap)
 	sitemapTag.innerHTML = "<ul>"+"<li><a href='index.html'>"+"Hjem"+"</li>"+sitemap+"</a></ul>"
 }
