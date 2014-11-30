@@ -10,7 +10,7 @@ We have used css on every page to make them look nicer. All the pages have a con
 
 c. XML
 "Sitemap"
-We have used xml for our sitemap.
+We have used xml for our sitemap.[Insert content from Sigurd here] Lorem ipsum
 
 d. Client-side Programming: Javascript
 The header on every page
@@ -29,5 +29,5 @@ Uses javascript to sort in a table with food prices, putting the row with the li
 "Kart"
 The map page implements Google Maps API v3 and includes markers with som basic information about the location. There are also some buttons for easily finding a location in the map. We wanted a map on our site and the Google Maps API is well documented and a good way to include javascript in our page.
 
-SIGURD SKRIV OM AT VI BRUKER JAVASCRIPT TIL XML TING OG TANG OG #YOLO
+SIGURD SKRIV OM AT VI BRUKER JAVASCRIPT TIL XML TING OG TANG OG #YOLO!!
 
