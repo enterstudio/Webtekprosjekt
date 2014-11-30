@@ -151,15 +151,12 @@ body {
 	text-align: right;
 	margin-top: 50px;
 }
-.row{
+.row {
 	width: 80%;
       max-width: 1170px;
 	margin-right: auto;
 	margin-left: auto;
       margin-top: 20px;
-
-
-      position: relative;
 }
 
 .row>p {
@@ -195,6 +192,42 @@ body {
       left:0;
       width:100%;
       height:100%;
+}
+
+.next-row {
+      height: 40px;
+      width: 80%;
+      max-width: 1170px;
+      margin-right: auto;
+      margin-left: auto;
+      margin-top: 50px;
+      margin-bottom: 20px;
+}
+
+.next-row a {
+      text-decoration: none;
+      color: #FFFFFF;
+      padding: 10px;
+      border-radius: 10px;
+      background-color: #4B0E0E;
+      width: 120px;
+      text-align: center;
+}
+
+.previous-article {
+      float:left;
+}
+
+.previous-article:hover {
+      background: #990000;
+}
+
+.next-article {
+      float:right;
+}
+
+.next-article:hover {
+      background-color: #990000;
 }
             
 #footer {
