@@ -65,22 +65,22 @@
 		</div>
 		
 		<div class="row">
-			<p>Budsjett:</p>
-			<input id="budsjett" type="number" size="10" min="0" placeholder="Budsjett">
-            <p>Utgifter:</p>
-			<div>
-				<ul id="utgifter">
-				</ul>
-			</div>
-			<input id="utgift_navn" type="text" size="22" placeholder="Utgift">
-			<input id="utgift" type="number" size="10" min="0" placeholder="Kostnad">
-			<button id="ny_utgift" type="button" onclick="ny_utgift()">Legg til utgift</button>
-            <button id="reset" type="button" onclick="reset()">Reset</button>
-            <p>Sum:</p>
-            <div id="sum">
+			<div id ="calculator">
+				<p>Budsjett:</p>
+				<input id="budsjett" type="number" min="0" placeholder="Budsjett">
+				<p>Utgifter:</p>
+				<div>
+					<ul id="utgifter">
+					</ul>
+				</div>
+				<input id="utgift_navn" type="text" size="22" placeholder="Utgift">
+				<input id="utgift" type="number" min="0" placeholder="Kostnad">
+				<button id="ny_utgift" type="button" onclick="ny_utgift()">Legg til utgift</button>
+				<button id="reset" type="button" onclick="reset()">Reset</button>
+				<p>Sum:</p>
+				<div id="sum">
+				</div>
             </div>
-            
-            
 		</div>
 		<div class="next-row">
 			<a href="kok.html" class="previous-article" title="Kok">Forrige artikkel</a>
