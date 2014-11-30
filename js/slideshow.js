@@ -44,6 +44,9 @@ function firstFrame(){
 	if(slideNumber == slideLength){
 		slideNumber = 0
 	}
+	//Set canvas size
+	ctx.canvas.width  = samfSlide.width;
+  	ctx.canvas.height = samfSlide.height;
 	// Draw picture 
 	ctx.drawImage(slides[slideNumber],0,0,1170,580);
 	console.log(slides[slideNumber])
@@ -73,10 +76,10 @@ if(ctx != null)
 	slideLinks[0] = "uteliv/samfundet.html"
 	slideLinks[1] = "studentliv/studieteknikk.html"
 	slideLinks[2] = "studentliv/matpris.html"
-	ctx.canvas.width  = samfSlide.width;
-  	ctx.canvas.height = samfSlide.height;
+	
 
-  	timerStart = window.setInterval(firstFrame,200);
+  	//timerStart = window.setInterval(firstFrame,300);
+  	samfSlide.onload = firstFrame();
   	timerID = window.setInterval(startAnimation,5000);
 
 	slideLength = slides.length

@@ -1,5 +1,5 @@
 xmlhttp = new XMLHttpRequest();
-xmlhttp.open("GET","http://folk.ntnu.no/sigurdhg/sitemap.xml",false);
+xmlhttp.open("GET","http://folk.ntnu.no/simeonlg/IT2805/studentguiden/sitemap.xml",false);
 xmlhttp.send();
 xmlDoc =xmlhttp.responseXML;
 
