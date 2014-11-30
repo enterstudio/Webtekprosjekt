@@ -41,6 +41,28 @@ function nextFrame(){
 	slideNumber += 1
 }
 function firstFrame(){
+	if(ctx != null){
+	var samfSlide = document.getElementById("samfSlide");
+	var hovedSlide = document.getElementById("hovedSlide");
+	var butikkSlide = document.getElementById("butikkSlide");
+	slides[0] = samfSlide
+	slides[1] = hovedSlide
+	slides[2] = butikkSlide
+	slideLinks[0] = "uteliv/samfundet.html"
+	slideLinks[1] = "studentliv/studieteknikk.html"
+	slideLinks[2] = "studentliv/matpris.html"
+	
+
+  	//timerStart = window.setInterval(firstFrame,300);
+  	
+  	timerID = window.setInterval(startAnimation,5000);
+
+	slideLength = slides.length
+}
+else
+{
+	console.log("feil")
+}
 	if(slideNumber == slideLength){
 		slideNumber = 0
 	}
@@ -64,30 +86,7 @@ function firstFrame(){
 	clearInterval(timerStart)
 }
 
-if(ctx != null)
-{
 
-	var samfSlide = document.getElementById("samfSlide");
-	var hovedSlide = document.getElementById("hovedSlide");
-	var butikkSlide = document.getElementById("butikkSlide");
-	slides[0] = samfSlide
-	slides[1] = hovedSlide
-	slides[2] = butikkSlide
-	slideLinks[0] = "uteliv/samfundet.html"
-	slideLinks[1] = "studentliv/studieteknikk.html"
-	slideLinks[2] = "studentliv/matpris.html"
-	
-
-  	//timerStart = window.setInterval(firstFrame,300);
-  	samfSlide.onload = firstFrame();
-  	timerID = window.setInterval(startAnimation,5000);
-
-	slideLength = slides.length
-}
-else
-{
-	console.log("feil")
-}
 
 function startAnimation(){
 	pixelDiff = 107
