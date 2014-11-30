@@ -234,17 +234,36 @@ body {
       width: 100%;
       background-color: #4B0E0E;
       color: white;
-      height: 60px;
       text-align: center;
 
-}
+      height: auto;
+
+}     
 
 #footer div {
-      padding-top: 10px;
+      width: 20%;
+      padding: 10px;
+      display: inline-block;
+      vertical-align: top;
+
+      color: white;
 }
 
-#footer div p{
-      margin: 0;
+#footer div p {
 
+}
+
+#footer ul {
+      margin-left: 25%;
+      text-align: left;
+}
+
+#footer ul li a {
+            text-decoration: none;
+            color: white;
+}
+
+#footer ul li a:hover {
+      font-weight: 900;
 }
 
