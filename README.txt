@@ -1,0 +1,1 @@
+README for studentguiden, the ultimate guide to Trondheim for students.
