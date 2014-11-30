@@ -1,3 +1,25 @@
 dagligvarer.jpg: http://cdn-c.ndlap3.seria.net/sites/default/files/images/sy6b96ea.hovedspalte.jpg
 penger.jpg: http://sunnokonomi.no/wp-content/last_opp_her/2012/01/penger.jpg
 koke.jpg: http://bloximages.chicago2.vip.townnews.com/wagonertribune.com/content/tncms/assets/v3/editorial/9/0a/90ad0146-fc7a-11e3-bbb7-001a4bcf887a/53aae615c57ae.image.jpg
+
+bymarka1.jpg: http://no.wikipedia.org/wiki/Bymarka#mediaviewer/File:Gr%C3%A5kallenFromStorheia.jpg
+sit_logo.png: http://www.bedpsyk.no/sites/default/files/bilder/sit-logo.png
+solsiden.jpg: http://www.visitnorway.com/ProductImages/TellUs/TellUs_2990_27_large.jpg
+trondheim_kino.jpg: http://www.kinomagasinet.no/sites/default/files/styles/fullpage/public/atmos%204.jpg?itok=x4C2Qk3s
+uka_logo.png: http://www.ntnu.no/documents/314139/17862224/UKElogo-r%C3%B8d/81fd061b-0f56-4f84-9320-620f38b955f8?t=1350897749234
+uteliv_sentrum.jpg: http://0.static.wix.com/media/692d6aa8fc91b69eedf906a3f5b4b846.wix_mp_512
+ntnui_logo.png: http://ntnui.no/sites/default/files/ntnui_logo_2.png
+
+butikkSlide.png: http://olportalen.no/op/wp-content/uploads/2013/05/Jan-Ove-Matkroken-Natland.jpg
+carousel-hovedbygg.jpg: 
+circle-glos.jpg: 
+eksamen.jpg: http://www.uib.no/sites/w3.uib.no/files/w2/ek/eksamen_0.jpg
+frivillig.gif: http://cdn.ung.no/element_db/33/3375-hender.gif
+hovedSlide.png:
+lf.jpg: http://home.hio.no/~bjornein/XMAV01-2d.jpg
+samf.jpg: https://www.samfundet.no/upload/images/image_files/000/000/166/large/fasade_hoved_fg.jpg?1414442090
+samfkart.jpg: https://www.samfundet.no/upload/images/image_files/000/000/107/original/kart.jpg?1413399464
+samfSlide.png:
+skole.jpg: https://c2.staticflickr.com/4/3370/3476032224_46176817f5.jpg
+study.jpg:
+teknikk.jpg: http://www.studenttorget.no/images/orginal/27911.jpg
