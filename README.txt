@@ -7,6 +7,7 @@ We used forms to accept integer and a string input from the user on our calculat
 With the exception of name field for "utgifter", the fields only accept positive integers.
 
 b. CSS
+For at ting skal se fint ut, på alle sider
 
 c. XML
 "Sitemap.xml"
